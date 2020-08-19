@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniTargets</title>
+    <style>
+      .container {
+        background-color: #f7f2e7;
+        margin: 0 auto;
+        padding: 15px 60px;
+        max-width: 800px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 48px;
+      }
+
+      hr {
+        color: #797a7e;
+      }
+
+      h2:hover {
+        text-decoration: underline;
+        cursor: alias;
+      }
+
+      h3:hover {
+        text-decoration: underline;
+        cursor: alias;
+      }
+
+      .introduction {
+        flex-direction: row-reverse;
+      }
+
+      .introduction > .introduction-text {
+        padding-left: 0;
+        padding-right: 20px;
+      }
+      .target {
+        display: flex;
+        margin: 0 auto 0 auto;
+        vertical-align: middle;
+        border-radius: 24px;
+        width: 400px;
+      }
+
+      .main {
+        text-align: justify;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px #ccc;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px 5px 10px;
+        width: 100%;
+      }
+
+      .target > .main {
+        padding-left: 20px;
+      }
+
+      .last {
+        text-align: center;
+      }
+
+      button {
+        display: inline;
+        margin: 20px auto;
+        font-size: 14px;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: right;
+        font-family: monospace;
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 0%;
+      }
+
+      body {
+        margin: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #d8d3cd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        UniTargets
+      </h1>
+
+      <hr />
+
+      <br />
+
+      <div class="introduction">
+        <div class="introduction-image">
+          <img
+            class="target"
+            src="https://miro.medium.com/max/1000/1*e7h9N7ba9JiqKrAT-j-CeQ.jpeg"
+            alt="UniTargets"
+          />
+        </div>
+        <div class="introduction-text">
+          <h2>
+            About us
+          </h2>
+          <p class="main">
+            Are you in your final year of school and thinking of applying to
+            university? Or have you already started university and you are
+            swapped with classes, assignments, and deadlines? Or maybe you have
+            just finished your undergraduate and you are thinking of studying
+            further, for a postgraduate or a Ph.D.…Whichever is your situation
+            we are here to help and support you through this journey.
+
+            <br />
+            <br />
+
+            We are a team of MSc and Ph.D. writers, who ourselves have been
+            through the UK system. We have considerable insight into the issues
+            and challenges you are facing. With professionalism and dedication,
+            we are by your side to support you from the beginning (application
+            process) until the end (dissertation/thesis submission).
+          </p>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Services</h3>
+
+      <ul class="services">
+        <li>
+          Support with your UCAS, postgraduate and PhD application process
+        </li>
+        <br />
+
+        <li>
+          Academic support with your assignments (proofreading, referencing,
+          plagiarism)
+        </li>
+        <br />
+
+        <li>Dissertation/Thesis support</li>
+      </ul>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <p class="last">For more information <button>Contact us</button></p>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <p class="footer">
+        Coded by Pavlina Alexandrou
+      </p>
+    </div>
+
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        let last = document.querySelector(".last");
+        if (age >= 18) {
+          last.innerHTML =
+            "<strong>Thank you, " +
+            name +
+            "! Please contact us at unitargets@gmail.com!</strong>";
+        } else {
+          last.innerHTML =
+            "<strong>Thank you, " +
+            name +
+            "! Unfortunately we cannot offer you our services!</strong>";
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
