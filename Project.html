@@ -10,6 +10,7 @@
         margin: 0 auto;
         padding: 15px 60px;
         max-width: 800px;
+        border-radius: 15px;
       }
 
       h1 {
@@ -19,6 +20,39 @@
 
       hr {
         color: #797a7e;
+      }
+
+      .levels {
+        border: solid black;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+        align-items: stretch;
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 30px;
+        list-style: none;
+        border-radius: 10px;
+        color: #e11d74;
+      }
+
+      li {
+        display: inline;
+      }
+
+      .under:hover {
+        text-decoration: underline;
+        background: lemonchiffon;
+      }
+
+      .post:hover {
+        text-decoration: underline;
+        background: lemonchiffon;
+      }
+
+      .doct:hover {
+        text-decoration: underline;
+        background: lemonchiffon;
       }
 
       h2:hover {
@@ -45,6 +79,7 @@
         vertical-align: middle;
         border-radius: 24px;
         width: 400px;
+        float: inline-end;
       }
 
       .main {
@@ -63,18 +98,20 @@
       }
 
       .last {
-        text-align: center;
+        text-align: left;
       }
 
       button {
         display: inline;
         margin: 20px auto;
-        font-size: 14px;
+        font-size: 18px;
+        font-weight: bold;
         padding: 10px;
         border: none;
         border-radius: 4px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         transition: all 200ms ease-in-out;
+        background: #f3e6e3;
       }
 
       button:hover {
@@ -93,7 +130,12 @@
       body {
         margin: 40px;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #d8d3cd;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 0, 0.5),
+            rgba(0, 0, 255, 0.5)
+          ),
+          url("university.jpg");
       }
     </style>
   </head>
@@ -104,6 +146,12 @@
       </h1>
 
       <hr />
+
+      <ul class="levels">
+        <li class="under">undergraduate</li>
+        <li class="post">postgraduate</li>
+        <li class="doct">doctoral</li>
+      </ul>
 
       <br />
 
@@ -116,9 +164,9 @@
           />
         </div>
         <div class="introduction-text">
-          <h2>
+          <h3>
             About us
-          </h2>
+          </h3>
           <p class="main">
             Are you in your final year of school and thinking of applying to
             university? Or have you already started university and you are
@@ -145,17 +193,45 @@
 
       <ul class="services">
         <li>
-          Support with your UCAS, postgraduate and PhD application process
+          <strong
+            >Support with your UCAS, postgraduate and PhD application
+            process</strong
+          >
+
+          <p>
+            <em
+              >How to apply via UCAS or directly to the university of your
+              choice</em
+            >
+          </p>
+          <p>
+            <em
+              >Support and advice with your personal statement and/or cover
+              letter</em
+            >
+          </p>
+          <p>
+            <em>Help with the entry requirements and your qualifications</em>
+          </p>
         </li>
         <br />
 
         <li>
-          Academic support with your assignments (proofreading, referencing,
-          plagiarism)
+          <strong>Academic support with your assignments</strong>
+          <p>
+            <em>Proofreading</em>
+          </p>
+          <p><em>Referencing</em></p>
+          <p><em>Plagiarism</em></p>
         </li>
         <br />
 
-        <li>Dissertation/Thesis support</li>
+        <li><strong>Dissertation/Thesis support</strong></li>
+        <p><em>Review the four main chapters</em></p>
+        <p>
+          <em>Weekly meetings based on the review of the four main chapters</em>
+        </p>
+        <p><em>Proofreading</em></p>
       </ul>
 
       <br />
@@ -176,7 +252,7 @@
       <br />
 
       <p class="footer">
-        Coded by Pavlina Alexandrou
+        Page coded and designed by Pavlina Alexandrou
       </p>
     </div>
 
