@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniTargets</title>
+  <style>
+    .container {
+      background-color: #f7f2e7;
+      margin: 0 auto;
+      padding: 15px 60px;
+      max-width: 800px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: #005086;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #318fb5;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    hr {
+      color: #797a7e;
+    }
+
+    .levels {
+      border: solid black;
+      text-align: center;
+      padding: 0%;
+      margin: 3%;
+      align-items: stretch;
+      justify-content: space-evenly;
+      display: flex;
+      font-size: 30px;
+      border-radius: 10px;
+      color: #e11d74;
+      list-style: none;
+    }
+
+    .under:hover {
+      text-decoration: underline;
+      background: lemonchiffon;
+    }
+
+    .post:hover {
+      text-decoration: underline;
+      background: lemonchiffon;
+    }
+
+    .doct:hover {
+      text-decoration: underline;
+      background: lemonchiffon;
+    }
+
+    h3:hover {
+      text-decoration: underline;
+      cursor: default;
+    }
+
+    .introduction {
+      flex-direction: row-reverse;
+    }
+
+    .introduction>.introduction-text {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+
+    .target {
+      display: flex;
+      margin: 0 auto 0 auto;
+      vertical-align: middle;
+      border-radius: 24px;
+      width: 400px;
+      float: inline-end;
+    }
+
+    .main {
+      text-align: justify;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 2px #ccc;
+      display: flex;
+      align-items: center;
+      padding: 5px 10px 5px 10px;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .services {
+      list-style: "\1F44D";
+      padding: 0px 0px 0px 20px;
+      font-size: 20px;
+    }
+
+    .super {
+      padding: 0px 0px 0px 15px;
+    }
+
+    li span {
+      position: relative;
+      left: 10px;
+    }
+
+    .target>.main {
+      padding-left: 20px;
+    }
+
+    .last {
+      text-align: center;
+      font-size: 25px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      background: #318fb5;
+      color: #ffff;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: right;
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 15px;
+      margin-bottom: 0%;
+    }
+
+    body {
+      margin: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(to top, #f7d6bf, #b0cac7),
+        url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/002/108/original/university.jpg?1597927185");
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      UniTargets
+    </h1>
+
+    <h2>
+      Your success is our target!
+    </h2>
+
+    <hr />
+
+    <ul class="levels">
+      <li class="under">undergraduate</li>
+      <li class="post">postgraduate</li>
+      <li class="doct">doctoral</li>
+    </ul>
+
+    <br />
+
+    <div class="introduction">
+      <div class="introduction-image">
+        <img class="target" src="https://miro.medium.com/max/1000/1*e7h9N7ba9JiqKrAT-j-CeQ.jpeg" alt="UniTargets" />
+      </div>
+      <div class="introduction-text">
+        <h3>
+          About us
+        </h3>
+        <p class="main">
+          Are you in your final year of school and thinking of applying to
+          university? Have you already started university and you are swamped
+          with classes, assignments, and deadlines? Have just finished your
+          undergraduate and you are thinking of studying further, for a
+          postgraduate course or a Ph.D.? Whichever is your situation we are
+          here to help and support you throughout this journey.
+
+          <br />
+          <br />
+
+          We are a team of MSc and Ph.D. graduates and professional writers,
+          who ourselves have been through the UK educational system. We have
+          considerable insight into the issues and challenges you are facing.
+          With professionalism and dedication, we are by your side to support
+          you from the beginning (application process) until the end
+          (dissertation/thesis submission).
+        </p>
+      </div>
+    </div>
+
+    <br />
+
+    <h3>Services</h3>
+
+    <ul class="services">
+      <li><span>
+          <strong>
+            Support with your UCAS, postgraduate and PhD application
+            process</strong>
+      </li></span>
+      <div class="super">
+        <p>
+          <em>How to apply via UCAS or directly to the university of your
+            choice</em>
+        </p>
+        <p>
+          <em>Support and advice with your personal statement and/or cover
+            letter</em>
+        </p>
+        <p>
+          <em>Help with the entry requirements and your qualifications</em>
+        </p>
+      </div>
+      <br />
+
+      <li><span>
+          <strong>Academic support with your assignments</strong>
+      </li></span>
+      <div class="super">
+        <p>
+          <em>Proofreading</em>
+        </p>
+        <p><em>Referencing</em></p>
+        <p><em>Plagiarism</em></p>
+      </div>
+      <br />
+
+      <li><span><strong>Dissertation/Thesis support</strong></li></span>
+      <div class="super">
+        <p><em>Review the four main chapters</em></p>
+        <p>
+          <em>Weekly meetings based on the review of the four main chapters</em>
+        </p>
+        <p><em>Proofreading</em></p>
+      </div>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p class="last">For more information <button>Contact us</button></p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p class="footer">
+      Page coded and designed by 
+      <b> <a href="https://www.linkedin.com/in/pavlinaalexandrou/" target="_blank">
+       Pavlina Alexandrou</b></p></a>
+  </div>
+
+  <script>
+    function contactUs() {
+      let name = prompt("What is your name?");
+      let age = prompt("How old are you?");
+
+      let last = document.querySelector(".last");
+      if (age >= 18) {
+        last.innerHTML =
+          "<strong>Thank you, " +
+          name +
+          "! Please contact us at unitargets@gmail.com!</strong>";
+      } else {
+        last.innerHTML =
+          "<strong>Thank you, " +
+          name +
+          "! Unfortunately we cannot offer you our services!</strong>";
+      }
+    }
+
+    let contactButton = document.querySelector("button");
+
+    contactButton.addEventListener("click", contactUs);
+  </script>
+</body>
+
+</html>
